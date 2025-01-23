@@ -1,0 +1,6 @@
+producer\LocationProducer$Location.class
+util\Haversine.class
+consumer\LocationConsumer$Location.class
+report\DistanceReport.class
+consumer\LocationConsumer.class
+producer\LocationProducer.class
