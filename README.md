@@ -36,12 +36,21 @@ The program consists of three main components:
 
    - Ensure all dependencies (e.g., Apache Kafka, Gson) are installed and configured via Maven.
 
-2. **Run the Producer**:
+2. **Run servers Kafka and ZooKeeper
+   - Open PowerShell and write
+     - cd kafkaPath;
+     - .\bin\windows\zookeeper-server-start.bat .\config\zookeeper.properties
+   -Stay that windows opened.
+   -Now open new window of PowerShell and write them
+      -cd kafkaPath
+      -.\bin\windows\kafka-server-start.bat .\config\server.properties
+
+3. **Run the Producer**:
 
    - Navigate to the `LocationProducer` class.
    - Right-click on the `main()` method and select "Run 'LocationProducer.main()'".
 
-3. **Run the Consumers**:
+4. **Run the Consumers**:
 
    - First, run `LocationConsumer`:
      - Navigate to the `LocationConsumer` class.
@@ -50,7 +59,7 @@ The program consists of three main components:
      - Navigate to the `DistanceReport` class.
      - Right-click on the `main()` method and select "Run 'DistanceReport.main()'".
 
-4. **Monitoring**:
+5. **Monitoring**:
 
    - In the IntelliJ IDEA console, you will see:
      - Locations sent by the Producer.
@@ -62,6 +71,7 @@ The program consists of three main components:
 ## Running the Program via PowerShell
 
 To automate the launch of all components, use a PowerShell script.
+But on my PC shell scrypt dont work, didn't lounch kafka broker server, when it was in folder of project.If you have problem like that, please paste scrypt file the other space, that helps me and scrypt started to work.
 
 ### Setup Steps
 
