@@ -72,6 +72,8 @@ The program consists of three main components:
 
 To automate the launch of all components, use a PowerShell script.
 But on my PC shell scrypt dont work, didn't lounch kafka broker server, when it was in folder of project.If you have problem like that, please paste scrypt file the other space, that helps me and scrypt started to work.
+You can change ExecutionPolicy too and will work.Open PowerShell via administrator and write that.
+    -Set-ExecutionPolicy Bypass -Scope Process
 
 ### Setup Steps
 
