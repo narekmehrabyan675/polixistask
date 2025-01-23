@@ -55,7 +55,7 @@ public class LocationConsumer {
                     );
                     totalDistance += distance;
 
-                    // Отправка общего расстояния в топик distance_report
+                    // Sending total sum in distance_report
                     producer.send(new ProducerRecord<>(DISTANCE_TOPIC, String.valueOf(totalDistance)));
 
                     logger.info(String.format("Distance from last point: %.2f km, Total: %.2f km", distance, totalDistance));
